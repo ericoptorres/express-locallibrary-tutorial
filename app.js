@@ -24,8 +24,7 @@ app.use(limiter);
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
 
-const dev_db_url =
-  "mongodb+srv://konans:1234@cluster0.lz91hw2.mongodb.net/local_library?retryWrites=true&w=majority";
+const dev_db_url = "mongodb+srv://konans:1234@cluster0.xourx65.mongodb.net/local_library?retryWrites=true&w=majority&appName=AtlasApp"
 const mongoDB = process.env.MONGODB_URI || dev_db_url;
 
 main().catch((err)=> console.log(err));
